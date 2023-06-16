@@ -1,0 +1,52 @@
+body*{
+    box-sizing: border-box ;
+    border: 5px solid;
+}
+
+body{
+    margin: 0px;
+}
+
+.grid{
+    height: 800px;
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-areas: "red red violet" "yellow orange violet" "yellow green green";
+    gap: 8px;
+    justify-content: center;
+    align-content: center;
+    border: 5px solid;
+    
+}
+
+.left-side-top{
+    background-color: red;
+    grid-area: red;
+
+}
+
+.left-side-bottom{
+background-color: yellow;
+grid-area: yellow;
+}
+
+.right-side-bottom{
+background-color: green;
+grid-area: green;
+}
+
+.right-side-top{
+    background-color: violet;
+    grid-area: violet;
+
+}
+main{
+    background-color: orange;
+    width: 80px;
+    height: 80px;
+    justify-self: center;
+    align-self: center;
+    grid-area: 0;
+    
+}
